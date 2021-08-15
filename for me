@@ -1,0 +1,89 @@
+/**
+ * @name Alicookie
+ * @author Alicookie
+ * @version 0.1.6
+ * @description Alicookie for BetterDiscord/BandagedBD
+ * @source https://github.com/Alicookie/discord-themes/tree/master/alicookie
+ * @website https://github.com/Alicookie/discord-themes/tree/master/alicookie
+ * @invite W976FZS
+ */
+
+/* Import Base */
+@import url(https://leafyluigi.github.io/discord-themes/pyrite/build/base.css);
+
+/* Import User Modal Layout */
+@import url(https://leafyluigi.github.io/discord-themes/pyrite/build/userModalLayout.css);
+
+/* Import BD Only Features */
+@import url(https://leafyluigi.github.io/discord-themes/pyrite/build/better-discord.css);
+
+/* Import for optional things: */
+
+/* Optional: HorizontalServerList. Includes the base for the minitheme. Incompatible with Dribbblish. */
+/* @import url(https://leafyluigi.github.io/discord-themes/pyrite/build/horizontal-server-list.css); */
+
+/* Optional: Dribbblish. Includes the base for the theme. Incompatible with HorizontalServerList. */
+/* @import url(https://leafyluigi.github.io/discord-themes/pyrite/build/dribbblish.css); */
+
+/* Theme Base */
+:root {
+  --background-image: url(https://i.pinimg.com/originals/ae/93/cb/ae93cb6ad3d1c549e63b67dad9125e24.jpg);
+  --user-modal-image: var(--background-image);
+  --user-popout-image: var(--background-image);
+  --background-attachment: fixed;
+  --user-modal-attachment: var(--background-attachment);
+  --user-popout-attachment: var(--background-attachment);
+  --primary-color: #  --primary-color: #b4918f;
+  --secondary-color: #f5dad8;
+  --hover-color: #f0dbff;
+  --tooltip-color: #8a66aa;
+  --mention-background: var(--primary-color);
+  --mention-opacity: 0.3;
+  --home-icon: url(https://2.bp.blogspot.com/-pGyq0dFX4Y8/XHXEgPGE1TI/AAAAAAAAC68/kXBO2f7NJn0TjPcPQk_Lsjw0OWh2BU2QQCKgBGAs/w0/anime-couple-silhouette-heart-4K-60.jpg);
+
+  /* For Advanced Users */
+  --code-font: Monaco, Consolas, Courier, monospace;
+  --body-font: Whitney, Helvetica Neue, Helvetica, sans-serif;
+  /* Below are currently unused but will be used in future. */
+  --background-filters: none;
+  --user-modal-filters: blur(3px);
+  --user-popout-filters: blur(3px);
+  --gradient-colors: var(--primary-color);
+  --gradient-direction: to bottom right;
+  --body-filters: none;
+
+  /* Toggles. From 0 (disable) to 1 (enable). Anything outside of those values have NOT been tested and likely aren't supported. */
+  --hide-member-list: 0;
+  --hide-active-now: 0;
+
+  /* Windows Only - How many *pixels* wide the min/max/close buttons should be. */
+  --win-min-max-close-button-width: 28px; /* default: 28px, square: 48px */
+
+
+  /* Using HSL? Uncomment this chunk below. */
+
+  /*--server-size: var(--HSL-server-icon-size, var(--HSL-size, 35px));
+  --server-spacing: var(--HSL-server-spacing, var(--HSL-spacing, 10px));
+  --server-container: calc(var(--server-size) + 20px); */
+
+  /* Using any of the below plugins? Change the 0 to a 1 */
+  --channel-tabs-enabled: 0;
+}
+
+
+/* Feel free to edit these ones for Dark Mode */
+.theme-dark, .theme-dark .theme-light {
+  --card-background: rgba(0,0,0,0.5);
+  --side-shading: rgba(0,0,0,0.5);
+  --middle-shading: rgba(0,0,0,0.3);
+  --header-shading: rgba(0,0,0,0.7);
+}
+
+/* Feel free to edit these ones for Light Mode */
+.theme-light {
+  --card-background: rgba(255,255,255,0.05);
+  --side-shading: rgba(255,255,255,0.4);
+  --middle-shading: rgba(255,255,255,0.3);
+  --header-shading: rgba(255,255,255,0.5);
+}
+
